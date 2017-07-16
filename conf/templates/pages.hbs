@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        {{> common/htmlhead}}
+    </head>
+
+    <body>
+        <div class="darkbg hidden"></div>
+        {{> common/header}}
+
+        <div class="container">
+
+            <div>
+                <h4>{{cms "banners[0].title"}}</h4>
+                <h4>{{cms "banners[1].title"}}</h4>
+                <h4>{{cms "banners[2].title"}}</h4>
+            </div>
+
+            <div>
+
+            </div>
+
+            <h1>{{cms "title"}}</h1>
+
+            <article>
+                {{{cms "text"}}}
+            </article>
+
+        </div>
+
+        {{> common/footer}}
+        {{> common/htmlscripts}}
+    </body>
+
+</html>

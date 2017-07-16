@@ -146,6 +146,13 @@ POST        /:languageTag/wishlist/clear                                        
 GET         /:languageTag/search                                                @controllers.productcatalog.SearchController.process(languageTag: String)
 
 
+# LANDING PAGE
+# ~~~~~
+
+# Shows a landing page
+GET         /:languageTag/pages/:cmsKey.html                                     @pages.PagesController.show(languageTag: String, cmsKey: String)
+
+
 # PRODUCT DETAIL
 # ~~~~~
 
